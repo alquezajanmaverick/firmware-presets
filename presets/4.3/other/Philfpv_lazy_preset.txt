@@ -20,7 +20,7 @@ set dshot_bidir = ON
 
 #$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): Set Dynamic Idle to 30
+#$ OPTION BEGIN (UNCHECKED): Set Dynamic Idle to 30
 set dyn_idle_min_rpm = 30
 #$ OPTION END
 
@@ -40,8 +40,8 @@ set yaw_srate = 54
 
 
 #$ OPTION_GROUP BEGIN: VTX Tables (select one to enable filter options)
-#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 #$ OPTION BEGIN (UNCHECKED): iFlight Succex 800MW
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 vtxtable bands 4
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745    0
@@ -59,6 +59,7 @@ set vtx_freq = 5917
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Eachine TX1200
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 vtxtable bands 5
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
@@ -77,6 +78,7 @@ set vtx_freq = 5917
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): HGLRC Zeus 350MW
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 vtxtable bands 5
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
